@@ -1,0 +1,7 @@
+<launch>
+    <param name="Land_height"            value="0.14"         type="double" /> 
+    <param name="need_reset"             value="1"            type="int" /> 
+
+    <node pkg="fly_pkg" type="pos_CRAIC" name="pos_CRAIC" output="screen" >
+    </node>
+</launch>

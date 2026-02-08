@@ -1,0 +1,45 @@
+<launch>
+    <param name="x_kp"             value="1.6"          type="double" />
+    <param name="x_ki"             value="0"        type="double" />
+    <param name="x_kd"             value="0"            type="double" />
+    <param name="x_speed_max"      value="0.5"          type="double" />
+    <param name="x_speed_min"      value="-0.5"         type="double" />
+
+    <param name="y_kp"             value="1.6"          type="double" />
+    <param name="y_ki"             value="0"        type="double" />
+    <param name="y_kd"             value="0"            type="double" />
+    <param name="y_speed_max"      value="0.5"          type="double" />
+    <param name="y_speed_min"      value="-0.5"         type="double" />
+
+    <param name="z_kp"             value="1.0"          type="double" />
+    <param name="z_ki"             value="0"        type="double" />
+    <param name="z_kd"             value="0.0"          type="double" />
+    <param name="z_speed_max"      value="0.5"          type="double" />
+    <param name="z_speed_min"      value="-0.3"         type="double" />
+
+    <param name="yaw_kp"             value="1.6"               type="double" />
+    <param name="yaw_ki"             value="0"                 type="double" />
+    <param name="yaw_kd"             value="0"                 type="double" />
+    <param name="yaw_speed_max"      value="0.5236"            type="double" />
+    <param name="yaw_speed_min"      value="-0.5236"           type="double" />
+
+
+    <param name="cv_x_kp"             value="0.001"         type="double" />
+    <param name="cv_x_ki"             value="0.0001"        type="double" />
+    <param name="cv_x_kd"             value="0"            type="double" />
+
+    <param name="cv_y_kp"             value="0.001"         type="double" />
+    <param name="cv_y_ki"             value="0.0001"        type="double" />
+    <param name="cv_y_kd"             value="0"            type="double" />
+
+    <param name="cv_z_kp"             value="0.001"         type="double" />
+    <param name="cv_z_ki"             value="0.0001"        type="double" />
+    <param name="cv_z_kd"             value="0.0"          type="double" />
+
+    <param name="cv_yaw_kp"             value="0.001"              type="double" />
+    <param name="cv_yaw_ki"             value="0.0001"             type="double" />
+    <param name="cv_yaw_kd"             value="0"                 type="double" />
+
+    <node pkg="fly_pkg" type="main_computer" name="main_task_computer" output="screen" >
+    </node>
+</launch>
